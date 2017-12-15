@@ -51,10 +51,8 @@
 #pragma mark - Public
 - (void)startAnimation{
     if (_isAnimationOn == YES) {
-        NSLog(@"1111");
         return;
     }
-    NSLog(@"2222");
     _isAnimationOn = YES;
     __weak typeof(self) weakSelf = self;
     self.animateLayer.hidden = YES;
@@ -361,7 +359,7 @@
         [circlePath moveToPoint:foldPoint];
         [circlePath addArcWithCenter:foldPoint radius:circleRadius startAngle:0 endAngle:M_PI*2 clockwise:YES];
         if (index == _chartData.walkArray.count-1) {
-            [circlePath addArcWithCenter:foldPoint radius:circleRadius*1.5 startAngle:0 endAngle:M_PI*2 clockwise:YES];
+            [circlePath addArcWithCenter:foldPoint radius:circleRadius*2 startAngle:0 endAngle:M_PI*2 clockwise:YES];
         }else{
             [circlePath addArcWithCenter:foldPoint radius:circleRadius startAngle:0 endAngle:M_PI*2 clockwise:YES];
         }

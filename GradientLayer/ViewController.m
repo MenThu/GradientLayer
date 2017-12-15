@@ -86,7 +86,7 @@
     
     NSArray <NSMutableDictionary *> *lastSeveDayArray = @[day1, day2, day3, day4, day5, day6, day7];
     for (NSMutableDictionary *dict in lastSeveDayArray) {
-        dict[@"walkCount"] = @(arc4random_uniform(10000) + 3000);
+        dict[@"walkCount"] = @(arc4random_uniform(20000));
     }
     FoldLineData *chartViewData = [[FoldLineData alloc] init];
     chartViewData.walkArray = lastSeveDayArray;
