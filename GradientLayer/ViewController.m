@@ -93,7 +93,4 @@
     self.chartView.chartData = chartViewData;
 }
 
-
-
-
 @end
